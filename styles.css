@@ -1,0 +1,98 @@
+body {
+  display: flex;
+}
+
+.game__container {
+  width: 500px;
+  height: 730px;
+  position: absolute;
+  left: 80px;
+}
+
+.border__left {
+  width: 80px;
+  height: 790px;
+  position: absolute;
+  background-color: #fff;
+  z-index: +2;
+}
+
+.border__right {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: #fff;
+    z-index: +2;
+    left: 580px;
+  }
+
+.border__top {
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: #fff;
+    z-index: +2;
+    top: -50px;
+}
+
+
+.sky {
+  background-image: url(./assets/fb-game-background.png);
+  width: 500px;
+  height: 580px;
+  position: absolute;
+}
+
+.ground__container {
+  height: 150px;
+  width: 580px;
+  position: absolute;
+  left:80px;
+  z-index: +1;
+}
+
+.ground__moving {
+    position: absolute;
+    top: 580px;
+    height: 150px;
+    background-image: url(./assets/bottom-background.png);
+    background-repeat: repeat-x;
+    animation: slideright 100s infinite linear;
+    width: 100%;
+    z-index: 1;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 10000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+.bird {
+  background-image: url(./assets/siam.jpg);
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  left: 220px;
+  bottom: 100px;
+  background-size: contain;
+  transform-origin: bottom;
+}
+
+.obstacle {
+  background-image: url("./assets/flappybird-pipe.png");
+  width: 60px;
+  height: 300px;
+  position: absolute;
+}
+
+.top__obstacle {
+  background-image: url("./assets/flappybird-pipe.png");
+  transform: rotate(180deg);
+  width: 60px;
+  height: 300px;
+  position: absolute;
+}
