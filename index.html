@@ -5,18 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flappy Bird</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js"></script>
   </head>
   <body>
     <div class="border__left"></div>
     <div class="game__container">
-        <div class="border__top"></div>
+      <div class="score">
+        <h1>0</h1>
+      </div>
+      <div class="border__top"></div>
       <div class="sky">
         <div class="bird"></div>
       </div>
       <div class="ground__container">
         <div class="ground__moving"></div>
+      </div>
+      <div id="newgame" class="newgame">
+        <h1> Flappy Bird - By Umar Khan</h1>
+        <button id="newGame">Start Game</button>
+      </div>
+      <div id="restart">
+        <h1>Game Over</h1>
+        <button id="playagain">Restart Game</button>
       </div>
     </div>
     <div class="border__right"></div>
