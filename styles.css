@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   display: flex;
   background-color: #242424;
@@ -73,7 +79,7 @@ body {
 .bird {
   background-image: url(./assets/siam.jpg);
   position: absolute;
-  width: 60px;
+  width: 50px;
   height: 45px;
   left: 220px;
   bottom: 100px;
@@ -105,13 +111,25 @@ body {
   font-size: 20px;
 }
 
+.text__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .newgame {
+  display: flex;
   color: #fff;
   position: absolute;
-  right: 20px;
-  top: 20px;
   z-index: 10;
   font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+  top: 200;
+}
+
+h1 {
+  font-size: 15px;
 }
 
 .active {
