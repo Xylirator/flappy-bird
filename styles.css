@@ -77,13 +77,14 @@ body {
 }
 
 .bird {
-  background-image: url(./assets/siam.jpg);
+  background-image: url(./assets/flappy-bird.png);
   position: absolute;
   width: 50px;
   height: 45px;
   left: 220px;
   bottom: 100px;
   background-size: contain;
+  background-repeat: no-repeat;
   transform-origin: bottom;
 }
 
@@ -126,7 +127,7 @@ body {
   flex-direction: column;
   align-items: center;
   top: 40%;
-  left: 28%;
+  left: 30%;
 }
 
 h1 {
@@ -136,8 +137,8 @@ h1 {
 .active {
   color: #fff;
   position: absolute;
-  left: 250px;
-  top: 250px;
+  top: 40%;
+  left: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
